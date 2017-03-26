@@ -12,6 +12,13 @@
 		1009B6A61E8648BD00A2948E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1009B6A41E8648BD00A2948E /* Main.storyboard */; };
 		1009B6A81E8648BD00A2948E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1009B6A71E8648BD00A2948E /* Assets.xcassets */; };
 		1009B6AB1E8648BD00A2948E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1009B6A91E8648BD00A2948E /* LaunchScreen.storyboard */; };
+		1009B6B31E8648CA00A2948E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009B6B21E8648CA00A2948E /* Utilities.swift */; };
+		10B68CAA1E87114400AEB323 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B68CA61E87114400AEB323 /* NotoSans-Bold.ttf */; };
+		10B68CAB1E87114400AEB323 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B68CA71E87114400AEB323 /* NotoSans-BoldItalic.ttf */; };
+		10B68CAC1E87114400AEB323 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B68CA81E87114400AEB323 /* NotoSans-Italic.ttf */; };
+		10B68CAD1E87114400AEB323 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B68CA91E87114400AEB323 /* NotoSans-Regular.ttf */; };
+		10B68CAF1E879F8F00AEB323 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B68CAE1E879F8F00AEB323 /* MaterialView.swift */; };
+		10B68CB11E87A1E600AEB323 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B68CB01E87A1E600AEB323 /* MaterialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		1009B6A71E8648BD00A2948E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1009B6AA1E8648BD00A2948E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1009B6AC1E8648BD00A2948E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1009B6B21E8648CA00A2948E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		10B68CA61E87114400AEB323 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		10B68CA71E87114400AEB323 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		10B68CA81E87114400AEB323 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		10B68CA91E87114400AEB323 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		10B68CAE1E879F8F00AEB323 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		10B68CB01E87A1E600AEB323 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		1009B69F1E8648BD00A2948E /* MySuperIslamicAgeApp */ = {
 			isa = PBXGroup;
 			children = (
+				10B68CA51E87113800AEB323 /* Resources */,
 				1009B6A01E8648BD00A2948E /* AppDelegate.swift */,
 				1009B6A21E8648BD00A2948E /* ViewController.swift */,
 				1009B6A41E8648BD00A2948E /* Main.storyboard */,
 				1009B6A71E8648BD00A2948E /* Assets.xcassets */,
 				1009B6A91E8648BD00A2948E /* LaunchScreen.storyboard */,
 				1009B6AC1E8648BD00A2948E /* Info.plist */,
+				1009B6B21E8648CA00A2948E /* Utilities.swift */,
+				10B68CAE1E879F8F00AEB323 /* MaterialView.swift */,
+				10B68CB01E87A1E600AEB323 /* MaterialButton.swift */,
 			);
 			path = MySuperIslamicAgeApp;
+			sourceTree = "<group>";
+		};
+		10B68CA51E87113800AEB323 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10B68CA61E87114400AEB323 /* NotoSans-Bold.ttf */,
+				10B68CA71E87114400AEB323 /* NotoSans-BoldItalic.ttf */,
+				10B68CA81E87114400AEB323 /* NotoSans-Italic.ttf */,
+				10B68CA91E87114400AEB323 /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +125,7 @@
 				TargetAttributes = {
 					1009B69C1E8648BD00A2948E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ER395VNV43;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +153,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B68CAA1E87114400AEB323 /* NotoSans-Bold.ttf in Resources */,
 				1009B6AB1E8648BD00A2948E /* LaunchScreen.storyboard in Resources */,
+				10B68CAB1E87114400AEB323 /* NotoSans-BoldItalic.ttf in Resources */,
+				10B68CAC1E87114400AEB323 /* NotoSans-Italic.ttf in Resources */,
 				1009B6A81E8648BD00A2948E /* Assets.xcassets in Resources */,
 				1009B6A61E8648BD00A2948E /* Main.storyboard in Resources */,
+				10B68CAD1E87114400AEB323 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1009B6B31E8648CA00A2948E /* Utilities.swift in Sources */,
 				1009B6A31E8648BD00A2948E /* ViewController.swift in Sources */,
 				1009B6A11E8648BD00A2948E /* AppDelegate.swift in Sources */,
+				10B68CAF1E879F8F00AEB323 /* MaterialView.swift in Sources */,
+				10B68CB11E87A1E600AEB323 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +297,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ER395VNV43;
 				INFOPLIST_FILE = MySuperIslamicAgeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.mysuperapps.MySuperIslamicAgeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +311,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ER395VNV43;
 				INFOPLIST_FILE = MySuperIslamicAgeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.mysuperapps.MySuperIslamicAgeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +340,7 @@
 				1009B6B11E8648BD00A2948E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,243 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="splitview2_3"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+        </array>
+        <array key="NotoSans-Italic.ttf">
+            <string>NotoSans-Italic</string>
+        </array>
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySuperIslamicAgeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="981" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunarbackground" translatesAutoresizingMaskIntoConstraints="NO" id="vT1-OK-Fc3">
+                                <rect key="frame" x="0.0" y="0.0" width="981" height="1024"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MrO-A4-IeW">
+                                <rect key="frame" x="40" y="40" width="901" height="964"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzd-h8-XuG" customClass="MaterialView" customModule="MySuperIslamicAgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="901" height="462"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IfM-f0-F3g">
+                                                <rect key="frame" x="8" y="8" width="885" height="446"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gregorian Date: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="X9u-tL-Gdj">
+                                                        <rect key="frame" x="258" y="0.0" width="369.5" height="108"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="45"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npe-3k-C7v" customClass="MaterialButton" customModule="MySuperIslamicAgeApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="113" width="885" height="107.5"/>
+                                                        <color key="backgroundColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                                        <state key="normal" title="Tap to Select Gregorian Date">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="35"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="dateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsd-H9-iEQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islamic Date: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="zLf-KK-HLM">
+                                                        <rect key="frame" x="290" y="225.5" width="305" height="108"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="45"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLr-yY-CmU" customClass="MaterialButton" customModule="MySuperIslamicAgeApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="338.5" width="885" height="107.5"/>
+                                                        <color key="backgroundColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                                        <state key="normal" title="Tap to Select Islamic Date">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="35"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="dateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ISX-wA-xaB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Npe-3k-C7v" firstAttribute="leading" secondItem="IfM-f0-F3g" secondAttribute="leadingMargin" id="0B7-7T-6GS"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Npe-3k-C7v" secondAttribute="trailing" id="2lQ-LH-4Nn"/>
+                                                    <constraint firstItem="CLr-yY-CmU" firstAttribute="width" secondItem="Npe-3k-C7v" secondAttribute="width" id="bxl-lN-nig"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.28197062015533447" green="0.2894585132598877" blue="0.33094319701194763" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="IfM-f0-F3g" secondAttribute="trailing" id="8Bd-Iw-a3l"/>
+                                            <constraint firstItem="IfM-f0-F3g" firstAttribute="centerY" secondItem="Zzd-h8-XuG" secondAttribute="centerY" id="SfH-nw-ZQI"/>
+                                            <constraint firstItem="IfM-f0-F3g" firstAttribute="leading" secondItem="Zzd-h8-XuG" secondAttribute="leadingMargin" id="TxG-94-aG9"/>
+                                            <constraint firstItem="IfM-f0-F3g" firstAttribute="centerX" secondItem="Zzd-h8-XuG" secondAttribute="centerX" id="VkB-Th-mjV"/>
+                                            <constraint firstItem="IfM-f0-F3g" firstAttribute="top" secondItem="Zzd-h8-XuG" secondAttribute="topMargin" id="YtY-d6-tjS"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="IfM-f0-F3g" secondAttribute="bottom" id="wqL-FW-5iL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF2-hC-szI" customClass="MaterialView" customModule="MySuperIslamicAgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="502" width="901" height="462"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gQ2-68-0v7">
+                                                <rect key="frame" x="8" y="8" width="885" height="446"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age According to the:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-T4-OGN">
+                                                        <rect key="frame" x="215.5" y="0.0" width="454" height="95.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="45"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gregorian Calendar:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Q-ny-WQC">
+                                                        <rect key="frame" x="283.5" y="100.5" width="318.5" height="75"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Italic" family="Noto Sans" pointSize="35"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 years, 0 months, 0 days have passed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="MyV-uH-ryT">
+                                                        <rect key="frame" x="65.5" y="180.5" width="754" height="85"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="40"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islamic Calendar:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="IV4-98-lsn">
+                                                        <rect key="frame" x="307.5" y="270.5" width="270.5" height="74.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Italic" family="Noto Sans" pointSize="35"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 years, 0 months, 0 days have passed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0d9-0Z-HwB">
+                                                        <rect key="frame" x="65.5" y="350" width="754" height="96"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="40"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.28197062020000002" green="0.2894585133" blue="0.33094319700000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="gQ2-68-0v7" secondAttribute="trailing" id="IwJ-P6-PvV"/>
+                                            <constraint firstItem="gQ2-68-0v7" firstAttribute="leading" secondItem="uF2-hC-szI" secondAttribute="leadingMargin" id="ZcO-Vc-3PL"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="gQ2-68-0v7" secondAttribute="bottom" id="gkN-m5-YzK"/>
+                                            <constraint firstItem="gQ2-68-0v7" firstAttribute="top" secondItem="uF2-hC-szI" secondAttribute="topMargin" id="zOe-gI-gn0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uF2-hC-szI" firstAttribute="width" secondItem="Zzd-h8-XuG" secondAttribute="width" id="BWK-UN-AT4"/>
+                                    <constraint firstItem="uF2-hC-szI" firstAttribute="height" secondItem="Zzd-h8-XuG" secondAttribute="height" id="kBT-MN-92h"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal" spacing="20"/>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-hH-ohz" customClass="MaterialView" customModule="MySuperIslamicAgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="504" width="981" height="520"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-zh-tgQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="981" height="476"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="512195803.37181801">
+                                            <!--2017-03-26 04:36:43 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Px-yq-8v3">
+                                        <rect key="frame" x="0.0" y="476" width="981" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="dtf-nU-bV6"/>
+                                        </constraints>
+                                        <items>
+                                            <barButtonItem systemItem="cancel" id="y8B-qi-FUd">
+                                                <connections>
+                                                    <action selector="cancelTapped:" destination="BYZ-38-t0r" id="pYt-YC-lCq"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="IOI-0a-IwZ"/>
+                                            <barButtonItem systemItem="done" id="cDG-c7-7y2">
+                                                <connections>
+                                                    <action selector="doneTapped:" destination="BYZ-38-t0r" id="0dv-IV-EnK"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="barTintColor" red="0.28197062020000002" green="0.2894585133" blue="0.33094319700000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28197062020000002" green="0.2894585133" blue="0.33094319700000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6Px-yq-8v3" secondAttribute="bottom" id="7Pu-wR-2Ma"/>
+                                    <constraint firstItem="6Px-yq-8v3" firstAttribute="top" secondItem="YRT-zh-tgQ" secondAttribute="bottom" id="BwC-bi-BHN"/>
+                                    <constraint firstAttribute="height" constant="260" id="DE5-Ak-iCF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="520"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="YRT-zh-tgQ" secondAttribute="trailing" id="SFy-i6-heD"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Px-yq-8v3" secondAttribute="trailing" id="SLJ-Bi-ac2"/>
+                                    <constraint firstItem="YRT-zh-tgQ" firstAttribute="top" secondItem="Un9-hH-ohz" secondAttribute="top" id="SOW-p3-XNK"/>
+                                    <constraint firstItem="6Px-yq-8v3" firstAttribute="leading" secondItem="Un9-hH-ohz" secondAttribute="leading" id="Xk0-Hd-cEM"/>
+                                    <constraint firstItem="YRT-zh-tgQ" firstAttribute="leading" secondItem="Un9-hH-ohz" secondAttribute="leading" id="nJZ-Sd-6W8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vT1-OK-Fc3" secondAttribute="bottom" id="0qI-ol-Vh2"/>
+                            <constraint firstAttribute="leading" secondItem="Un9-hH-ohz" secondAttribute="leading" id="7ex-3c-KbF"/>
+                            <constraint firstItem="MrO-A4-IeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ECZ-O7-rst"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MrO-A4-IeW" secondAttribute="trailing" constant="20" id="WUu-Yv-rW6"/>
+                            <constraint firstAttribute="trailing" secondItem="Un9-hH-ohz" secondAttribute="trailing" id="Zj8-r8-bFB"/>
+                            <constraint firstItem="vT1-OK-Fc3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bFc-Ma-vmR"/>
+                            <constraint firstItem="MrO-A4-IeW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="bhU-bJ-1Tp"/>
+                            <constraint firstAttribute="bottom" secondItem="Un9-hH-ohz" secondAttribute="bottom" id="c4m-Mj-75C"/>
+                            <constraint firstItem="MrO-A4-IeW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="gBA-bO-ow0"/>
+                            <constraint firstAttribute="trailing" secondItem="vT1-OK-Fc3" secondAttribute="trailing" id="hEV-tX-HsK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MrO-A4-IeW" secondAttribute="bottom" constant="20" id="ljr-Mb-1qF"/>
+                            <constraint firstItem="vT1-OK-Fc3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n6Y-aP-U9r"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateAndToolbarView" destination="Un9-hH-ohz" id="P7Q-gc-fr8"/>
+                        <outlet property="datePicker" destination="YRT-zh-tgQ" id="aUO-rW-wyu"/>
+                        <outlet property="gregorianButton" destination="Npe-3k-C7v" id="W7j-PD-1Km"/>
+                        <outlet property="gregorianLabel" destination="MyV-uH-ryT" id="qn8-FI-W7k"/>
+                        <outlet property="islamicButton" destination="CLr-yY-CmU" id="X6L-zL-3rr"/>
+                        <outlet property="islamicLabel" destination="0d9-0Z-HwB" id="dTV-tu-EQ2"/>
+                        <outlet property="mainStackView" destination="MrO-A4-IeW" id="qn7-K2-fsC"/>
+                        <outlet property="resultsView" destination="uF2-hC-szI" id="hy0-Va-c7d"/>
+                        <outlet property="toolbar" destination="6Px-yq-8v3" id="jRY-eg-jSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="136.26760563380282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lunarbackground" width="1024" height="683"/>
+    </resources>
 </document>
